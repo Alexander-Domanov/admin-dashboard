@@ -48,7 +48,7 @@ export const Sidebar = () => {
     const [isCollapsed, setIsCollapsed] = useState(false);
     const [selected, setSelected] = useState("Dashboard");
     return (
-        <Box
+        <Box height={"100%"}
             sx={{
                 "& .pro-sidebar-inner": {
                     background: `${colors.primary[400]} !important`,
@@ -65,6 +65,10 @@ export const Sidebar = () => {
                 "& .pro-menu-item.active": {
                     color: "#6870fa !important",
                 },
+                "& .pro-sidebar-layout": {
+                    color: "#6870fa !important",
+                },
+
             }}
         >
             <ProSidebar collapsed={isCollapsed}>
